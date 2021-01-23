@@ -1,0 +1,22 @@
+.board {
+  position: absolute;
+  border: 15px solid lightsalmon;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  transform: rotate3d(1, 0, 0, 30deg);
+}
+
+.square {
+  font-size: 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.square.black {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
